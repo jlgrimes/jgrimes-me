@@ -1,95 +1,55 @@
-import Image from 'next/image'
-import styles from './page.module.css'
+'use client';
+
+import {
+  ChakraProvider,
+  Container,
+  Grid,
+  Heading,
+  Link,
+  Stack,
+  Text,
+} from '@chakra-ui/react';
 
 export default function Home() {
   return (
-    <main className={styles.main}>
-      <div className={styles.description}>
-        <p>
-          Get started by editing&nbsp;
-          <code className={styles.code}>src/app/page.tsx</code>
-        </p>
-        <div>
-          <a
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{' '}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className={styles.vercelLogo}
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
-        </div>
-      </div>
-
-      <div className={styles.center}>
-        <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-      </div>
-
-      <div className={styles.grid}>
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Docs <span>-&gt;</span>
-          </h2>
-          <p>Find in-depth information about Next.js features and API.</p>
-        </a>
-
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Learn <span>-&gt;</span>
-          </h2>
-          <p>Learn about Next.js in an interactive course with&nbsp;quizzes!</p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Templates <span>-&gt;</span>
-          </h2>
-          <p>Explore the Next.js 13 playground.</p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Deploy <span>-&gt;</span>
-          </h2>
-          <p>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
-      </div>
-    </main>
-  )
+    <ChakraProvider>
+      <Container paddingY={8}>
+        <Stack spacing={8}>
+          <Heading size='3xl' color='gray.700'>{`Hi, I'm Jared.`}</Heading>
+          <Grid gridTemplateColumns={{ base: '3.3rem auto', md: '4rem auto' }} alignItems='center' rowGap={{ base: '6', md: '8'}}>
+            <Heading size='xl' color='gray.500'>
+              👨🏻‍💻
+            </Heading>
+            <Heading size='lg' color='gray.500'>
+              This is me fr. I work at{' '}
+              <Link
+                href='https://www.linkedin.com/company/microsoft'
+                isExternal
+              >
+                Microsoft
+              </Link>{' '}
+              making cool front-end for video.
+            </Heading>
+            <Heading size='xl' color='gray.500'>
+              📦
+            </Heading>
+            <Heading size='lg' color='gray.500'>
+              I used to work at{' '}
+              <Link href='https://www.linkedin.com/company/amazon/' isExternal>
+                Amazon
+              </Link>{' '}
+              building financial apps with lots of big data.
+            </Heading>
+            <Heading size='xl' color='gray.500'>
+              📈
+            </Heading>
+            <Heading size='lg' color='gray.500'>
+              I made <Link href='https://pokestats.live' isExternal>pokestats.live</Link>,
+              used by 90,000 Pokémon players and fans.
+            </Heading>
+          </Grid>
+        </Stack>
+      </Container>
+    </ChakraProvider>
+  );
 }
