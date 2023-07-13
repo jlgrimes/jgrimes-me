@@ -64,7 +64,7 @@ export default function Home() {
             </Link>
             {`, a COVID symptom tracker for the State of Michigan used 3M+ times.`}
           </Text>
-          <HStack spacing={4}>
+          <Stack spacing={4} direction={{ base: 'column', sm: 'row' }}>
             <HStack>
               <Icon as={FaTwitter} color='twitter.500' />
               <Link
@@ -95,7 +95,7 @@ export default function Home() {
                 jlgrimes
               </Link>
             </HStack>
-          </HStack>
+          </Stack>
         </Stack>
       </Container>
     </ChakraProvider>
