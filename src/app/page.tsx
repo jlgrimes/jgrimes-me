@@ -11,7 +11,15 @@ import {
   Stack,
   Text,
 } from '@chakra-ui/react';
-import { FaGithub, FaTwitter } from 'react-icons/fa';
+import {
+  FaFile,
+  FaGithub,
+  FaLinkedin,
+  FaList,
+  FaRegFile,
+  FaTwitter,
+  FaUserTie,
+} from 'react-icons/fa';
 
 export default function Home() {
   return (
@@ -29,10 +37,11 @@ export default function Home() {
             >
               @microsoft
             </Link>{' '}
-            building front-end and AI-powered enterprise solutions for Office Media.
+            building front-end and AI-powered enterprise solutions for Office
+            Media.
           </Text>
           <Text fontSize='xl' color='gray.600'>
-            {`I worked for  `}
+            {`I worked  `}
             <Link
               href='https://www.linkedin.com/company/amazon'
               isExternal
@@ -53,7 +62,7 @@ export default function Home() {
             </Link>
             {`, a live tournament data analytics tool used by 100,000+ members of the Pokémon community.`}
           </Text>
-            <Text fontSize='xl' color='gray.600'>
+          <Text fontSize='xl' color='gray.600'>
             {`I led development for `}
             <Link
               href='https://www.michigan.gov/coronavirus/news/2020/05/29/mi-symptoms-web-application-helps-michiganders-track-symptoms-informs-reopening-strategy'
@@ -66,23 +75,13 @@ export default function Home() {
           </Text>
           <Stack spacing={4} direction={{ base: 'column', sm: 'row' }}>
             <HStack>
-              <Icon as={FaTwitter} color='twitter.500' />
+              <Icon as={FaLinkedin} color='blue.600' />
               <Link
-                href='https://twitter.com/jgrimesey'
+                href='https://www.linkedin.com/in/jaredlgrimes/'
                 isExternal
                 fontWeight='semibold'
               >
-                @jgrimesey
-              </Link>
-            </HStack>
-            <HStack spacing={1}>
-              <Text>🧵</Text>
-              <Link
-                href='https://threads.net/@jaredgrimesey'
-                isExternal
-                fontWeight='semibold'
-              >
-                @jaredgrimesey
+                jaredlgrimes
               </Link>
             </HStack>
             <HStack>
@@ -95,7 +94,23 @@ export default function Home() {
                 jlgrimes
               </Link>
             </HStack>
+            <HStack>
+              <Icon as={FaTwitter} color='twitter.500' />
+              <Link
+                href='https://twitter.com/jgrimesey'
+                isExternal
+                fontWeight='semibold'
+              >
+                @jgrimesey
+              </Link>
+            </HStack>
           </Stack>
+          <HStack>
+            <Icon as={FaRegFile} />
+            <Link href='Resume.pdf' isExternal fontWeight='semibold'>
+              Resume
+            </Link>
+          </HStack>
         </Stack>
       </Container>
     </ChakraProvider>
