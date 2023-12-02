@@ -7,36 +7,36 @@ import Link from "next/link"
 export function Site() {
   return (
     <div className="w-full min-h-screen bg-slate-900 text-white">
-      <section className="w-full max-w-[2000px] min-h-screen px-16 mx-auto">
-        <div className="md:flex md:space-x-6">
+      <section className="w-full max-w-[2000px] min-h-screen px-4 sm:px-16 mx-auto">
+        <div className="lg:flex lg:space-x-6">
           <section
-            className="md:w-1/2 flex flex-col items-start justify-start space-y-8 text-left mt-16 md:mt-32"
+            className="lg:w-1/2 flex flex-col items-start justify-start space-y-6 sm:space-y-8 text-left pt-16 md:pt-32"
             id="home"
           >
-            <h1 className="text-6xl md:text-7xl font-extrabold tracking-tighter bg-clip-text text-transparent bg-gradient-to-r from-purple-500 to-blue-500 mb-4">
+            <h1 className="text-5xl sm:text-6xl md:text-7xl font-extrabold tracking-tighter bg-clip-text text-transparent bg-gradient-to-r from-purple-500 to-blue-500 mb-4">
               Hi, I&apos;m Jared.
             </h1>
-            <p className="max-w-[700px] text-xl md:text-2xl text-slate-400 mb-8">
-              I&apos;m a software engineer developing the future of video
-              <Link className="font-bold mx-2" href="https://twitter.com/Microsoft">
+            <p className="max-w-[700px] text-lg sm:text-xl md:text-2xl text-slate-400 mb-8">
+              I&apos;m a software engineer developing the future of video{` `}
+              <Link className="font-bold" href="https://twitter.com/Microsoft">
                 @microsoft
               </Link>
-              through AI experiences. React is my jam.
+              {` `}through AI experiences. React is my jam.
             </p>
-            <p className="max-w-[700px] text-xl md:text-2xl text-slate-400 mb-8">
-              I created
-              <Link className="font-bold mx-2" href="https://pokestats.live">
+            <p className="max-w-[700px] text-lg sm:text-xl md:text-2xl text-slate-400 mb-8">
+              I created{` `}
+              <Link className="font-bold" href="https://pokestats.live">
                 pokestats.live
               </Link>
-              serving as the standard for live Pokémon tournament analytics, driving 50,000 montly visitors.
+              {` `}serving as the standard for live Pokémon tournament analytics, driving 50,000 montly visitors.
             </p>
-            <p className="max-w-[700px] text-xl md:text-2xl text-slate-400">
+            <p className="max-w-[700px] text-lg sm:text-xl md:text-2xl text-slate-400">
               When I&apos;m not centering divs, I compete in the Pokémon TCG, currently standing in the top 32 players in
               North America!
             </p>
           </section>
-          <section className="md:w-1/2 mt-16 md:mt-32 space-y-8" id="resume">
-            <div className="grid grid-cols-3 gap-6 max-w-[700px] mx-auto text-lg md:text-xl text-slate-400">
+          <section className="lg:w-1/2 mt-24 md:mt-32 space-y-8" id="resume">
+            <div className="grid sm:grid-cols-3 gap-6 max-w-[700px] mx-auto text-lg md:text-xl text-slate-400">
               <div className="col-span-1 font-bold text-slate-500">2022 - Present</div>
               <div className="col-span-2 space-y-2">
                 <h3 className="text-2xl font-bold tracking-tighter">Software Engineer - Microsoft</h3>
