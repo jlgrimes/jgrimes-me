@@ -14,10 +14,10 @@ export function Site() {
             id="home"
           >
             <h1 className="text-6xl md:text-7xl font-extrabold tracking-tighter bg-clip-text text-transparent bg-gradient-to-r from-purple-500 to-blue-500 mb-4">
-              Hi, I'm Jared.
+              Hi, I&apos;m Jared.
             </h1>
             <p className="max-w-[700px] text-xl md:text-2xl text-slate-400 mb-8">
-              I'm a software engineer developing the future of video
+              I&apos;m a software engineer developing the future of video
               <Link className="font-bold mx-2" href="https://twitter.com/Microsoft">
                 @microsoft
               </Link>
@@ -31,7 +31,7 @@ export function Site() {
               serving as the standard for live Pokémon tournament analytics, driving 50,000 montly visitors.
             </p>
             <p className="max-w-[700px] text-xl md:text-2xl text-slate-400">
-              When I'm not centering divs, I compete in the Pokémon TCG, currently standing in the top 32 players in
+              When I&apos;m not centering divs, I compete in the Pokémon TCG, currently standing in the top 32 players in
               North America!
             </p>
           </section>
@@ -41,7 +41,7 @@ export function Site() {
               <div className="col-span-2 space-y-2">
                 <h3 className="text-2xl font-bold tracking-tighter">Software Engineer - Microsoft</h3>
                 <p className="text-slate-400">
-                  Developed UI for Stream's AI companion, Copilot, to quickly extract meaningful information and
+                  Developed UI for Stream&apos;s AI companion, Copilot, to quickly extract meaningful information and
                   insights from video. Optimized and maintained experiences for viewing and editing video
                   transcriptions.
                 </p>
@@ -69,7 +69,7 @@ export function Site() {
         </div>
         <section className="py-24 md:py-48 lg:py-64 xl:py-36 flex flex-col items-start justify-center" id="contact">
           <h2 className="text-4xl md:text-6xl font-extrabold tracking-tighter bg-clip-text text-transparent bg-gradient-to-r from-purple-500 to-blue-500 mb-8">
-            Let's Connect.
+            Let&apos;s Connect.
           </h2>
           <Link
             className="py-3 px-6 rounded-full border-2 border-blue-500 text-blue-500 text-lg md:text-xl font-bold tracking-wide hover:bg-blue-500 hover:text-slate-900 transition-colors duration-200"
@@ -85,7 +85,7 @@ export function Site() {
 }
 
 
-function IconTwitter(props) {
+function IconTwitter(props: any) {
   return (
     <svg
       {...props}
