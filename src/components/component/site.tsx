@@ -18,14 +18,14 @@ export function Site() {
             </h1>
             <p className="max-w-[700px] text-xl md:text-2xl text-slate-400 mb-8">
               I'm a software engineer developing the future of video
-              <Link className="font-bold mx-2" href="#">
+              <Link className="font-bold mx-2" href="https://twitter.com/Microsoft">
                 @microsoft
               </Link>
               through AI experiences. React is my jam.
             </p>
             <p className="max-w-[700px] text-xl md:text-2xl text-slate-400 mb-8">
               I created
-              <Link className="font-bold mx-2" href="#">
+              <Link className="font-bold mx-2" href="https://pokestats.live">
                 pokestats.live
               </Link>
               serving as the standard for live Pokémon tournament analytics, driving 50,000 montly visitors.
@@ -73,7 +73,7 @@ export function Site() {
           </h2>
           <Link
             className="py-3 px-6 rounded-full border-2 border-blue-500 text-blue-500 text-lg md:text-xl font-bold tracking-wide hover:bg-blue-500 hover:text-slate-900 transition-colors duration-200"
-            href="#"
+            href="https://twitter.com/jgrimesey"
           >
             <IconTwitter className="h-6 w-6 inline-block mr-2" />
             Connect on Twitter
