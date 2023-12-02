@@ -36,7 +36,7 @@ export function Site() {
             </p>
           </section>
           <section className="lg:w-1/2 mt-24 md:mt-32 space-y-8" id="resume">
-            <div className="grid sm:grid-cols-3 gap-6 max-w-[700px] mx-auto text-lg md:text-xl text-slate-400">
+            <div className="grid sm:grid-cols-3 gap-6 sm:gap-8 max-w-[700px] mx-auto text-lg md:text-xl text-slate-400">
               <div className="col-span-1 font-bold text-slate-500">2022 - Present</div>
               <div className="col-span-2 space-y-2">
                 <h3 className="text-2xl font-bold tracking-tighter">Software Engineer - Microsoft</h3>
