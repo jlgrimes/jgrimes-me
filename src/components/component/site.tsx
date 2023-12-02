@@ -18,14 +18,14 @@ export function Site() {
             </h1>
             <p className="max-w-[700px] text-xl md:text-2xl text-slate-400 mb-8">
               I'm a software engineer developing the future of video
-              <Link className="font-bold" href="#">
+              <Link className="font-bold mx-2" href="#">
                 @microsoft
               </Link>
               through AI experiences. React is my jam.
             </p>
             <p className="max-w-[700px] text-xl md:text-2xl text-slate-400 mb-8">
               I created
-              <Link className="font-bold" href="#">
+              <Link className="font-bold mx-2" href="#">
                 pokestats.live
               </Link>
               serving as the standard for live Pokémon tournament analytics, driving 50,000 montly visitors.
